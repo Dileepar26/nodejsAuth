@@ -1,10 +1,10 @@
 const mysql = require("mysql")
 
 const config = {
-    user:"dileep",
-    host:"db4free.net",
-    password:"Dileep@26",
-    database:"my_development",
+    user:process.env.user,
+    host:process.env.host,
+    password:process.env.password,
+    database: process.env.database
 }
 
 class Database {
