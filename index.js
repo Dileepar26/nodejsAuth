@@ -5,7 +5,6 @@ dotenv.config();
 const cookieParser = require('cookie-parser');
 const { requireAuth } = require('./middleware/authMiddleware');
 
-
 // middleware
 app.use(express.static('public'));
 app.use(cookieParser())
